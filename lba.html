@@ -3,90 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Belle Amie Vineyard</title>
+  <title>La Belle Amie Vineyard – Modern Revival V3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: 'Raleway', sans-serif;
+      background-color: #f5f2eb;
       color: #333;
-    }
-    .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-      padding: 20px;
-      background: #fff;
     }
     header {
-      background: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #4B306A;
+      color: white;
+      padding: 1rem 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    header img {
+      max-height: 60px;
     }
     header h1 {
+      font-family: 'Playfair Display', serif;
       margin: 0;
+      font-size: 2rem;
     }
     nav {
-      margin: 20px 0;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      background-color: #6A4B7A;
+      padding: 0.75rem 1rem;
+      position: relative;
+      z-index: 2;
     }
     nav a {
-      color: #333;
+      color: #fff;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 1rem;
+      font-weight: 600;
     }
     nav a:hover {
       text-decoration: underline;
     }
+    .hero-video-bg {
+      position: relative;
+      overflow: hidden;
+      height: 70vh;
+      max-height: 800px;
+    }
+    .hero-video-bg video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .video-overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 4rem 1rem;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+    .video-overlay h2 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .video-overlay p {
+      font-size: 1.5rem;
+    }
     .content {
-      margin: 20px 0;
+      padding: 3rem 10%;
     }
     .content h2 {
-      color: #333;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #4B306A;
     }
     .content p {
-      margin: 10px 0;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .button-link {
+      display: inline-block;
+      background-color: #4B306A;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button-link:hover {
+      background-color: #6A4B7A;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     footer {
-      background: #333;
-      color: #fff;
+      background-color: #4B306A;
+      color: white;
       text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
+      padding: 2rem 1rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="assets/grape.png" alt="La Belle Amie Logo">
     <h1>La Belle Amie Vineyard</h1>
-    <p>Little River / North Myrtle Beach, SC</p>
-    <p>Home of Twisted Sisters Wines</p>
   </header>
-  <div class="container">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Wine Tastings</a>
-      <a href="#">Wednesday Wine On The Decks</a>
-      <a href="#">2025 Festival Saturday Concerts</a>
-      <a href="#">Our Story</a>
-      <a href="#">Map, Newsletter, Reviews</a>
-    </nav>
-    <div class="content">
-      <h2>Upcoming Event: Credence Clearwater Revival Tribute</h2>
-      <p>We continue our salute to great artists with a music tribute to Credence Clearwater Revival performed by the very talented, Midnight Special. Performed this Saturday, March 29th at La Belle Amie Vineyard. The songs by John Fogerty topped the charts from 1968-1972 and remain timeless. Come relive a younger time in your life. Gates open at 10AM, with music from 12:00 PM to 4PM.</p>
-      <p>Treat yourself to delicious offerings from Stu’z Q BBQ, TJ’s Chicago Hot Dogs, and Miller’s Mongolian BBQ. Enjoy your favorite wine, beer, and soft drinks while relaxing in our scenic outdoor spaces or groove with friends new and old. We hope you can join us. Click the link below to purchase tickets. Cheers!</p>
-      <p><a href="#">Tickets: Wine Wednesday: March 26 – w/ Larry Steven’s</a></p>
-      <p><a href="#">Tickets: Saturday 3/29 Credence Clearwater Revival Tribute</a></p>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Wine Tastings</a>
+    <a href="#">Wednesday Deck</a>
+    <a href="#">Concerts</a>
+    <a href="#">Our Story</a>
+    <a href="#">Newsletter</a>
+  </nav>
+  <div class="hero-video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="assets/lba.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <h2>Welcome to La Belle Amie Vineyard</h2>
+      <p>Where music, wine, and sunshine flow together.</p>
+    </div>
+  </div>
+  <div class="content">
+    <h2>Upcoming Event: CCR Tribute</h2>
+    <p>Join us for a celebration of Creedence Clearwater Revival with Midnight Special on Saturday, March 29. Gates open at 10AM, music from 12–4PM.</p>
+    <p>Enjoy fine wines, BBQ, hot dogs, Mongolian grill, and a relaxed vineyard vibe with good friends and great music.</p>
+    <a href="#" class="button-link">Buy Tickets Now</a>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://labelleamie.com/wp-content/uploads/2020/10/festival-grapevine.jpg" alt="Festival Grapevine">
+      <img src="https://labelleamie.com/wp-content/uploads/2020/10/winetasting.jpg" alt="Wine Tasting">
+      <img src="https://labelleamie.com/wp-content/uploads/2020/10/5eebb2c79b8f9.image_.jpg" alt="Live Music">
     </div>
   </div>
   <footer>
-    <p>La Belle Amie Vineyard</p>
-    <p>1120 Saint Joseph Road, Little River, SC 29566</p>
-    <p>843-399-9463 | Michele.LaBelleAmie@Yahoo.com</p>
-    <p>&copy; 2025 La Belle Amie Vineyard Little River, SC</p>
+    <p>La Belle Amie Vineyard · 1120 Saint Joseph Road · Little River, SC 29566</p>
+    <p>843-399-9463 · Michele.LaBelleAmie@Yahoo.com</p>
+    <p>&copy; 2025 La Belle Amie Vineyard – Refined by VectorQuantum</p>
   </footer>
 </body>
 </html>
