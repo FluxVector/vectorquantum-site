@@ -3,133 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Belle Amie Vineyard – Modern Revival</title>
+  <title>La Belle Amie Vineyard – Modern Revival V3</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Raleway', sans-serif;
-      background: linear-gradient(135deg, #f5f2eb, #fdfbf8);
+      background-color: #f5f2eb;
       color: #333;
     }
     header {
-      background-image: url('https://labelleamie.com/wp-content/uploads/2020/10/winepic.jpg');
-      background-size: cover;
-      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #6b4c3b;
       color: white;
-      text-align: center;
-      padding: 120px 20px;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+    }
+    header img {
+      max-height: 60px;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.5rem;
+      margin: 0;
+      font-size: 2rem;
     }
     nav {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      background-color: #6b4c3b;
-      padding: 1rem;
+      background-color: #a67c52;
+      padding: 0.75rem 1rem;
     }
     nav a {
-      color: #fefefe;
+      color: #fff;
       text-decoration: none;
-      margin: 0.5rem 1rem;
+      margin: 0 1rem;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #ffddaa;
+      text-decoration: underline;
+    }
+    .hero-video {
+      text-align: center;
+      background-color: #f5f2eb;
+      padding: 2rem 1rem;
+    }
+    .hero-video iframe {
+      max-width: 90%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
     .content {
-      padding: 60px 10% 40px;
+      padding: 3rem 10%;
     }
     .content h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #5a2e1f;
     }
     .content p {
-      font-size: 1.2rem;
-      line-height: 1.8;
+      font-size: 1.1rem;
+      line-height: 1.7;
       margin-bottom: 1.5rem;
     }
-    .event-highlight {
-      background: #fff6e6;
-      border-left: 6px solid #d49466;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    .button-link {
+      display: inline-block;
+      background-color: #6b4c3b;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    .event-highlight h3 {
-      margin-top: 0;
-      color: #a8553a;
+    .button-link:hover {
+      background-color: #8a5d3b;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
-      margin-top: 3rem;
+      gap: 1rem;
+      margin-top: 2rem;
     }
     .gallery img {
       max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     footer {
       background-color: #6b4c3b;
-      color: #fff;
+      color: white;
       text-align: center;
       padding: 2rem 1rem;
-      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://labelleamie.com/wp-content/uploads/2020/10/logo.png" alt="La Belle Amie Logo">
     <h1>La Belle Amie Vineyard</h1>
-    <p>Modern Revival | Where Wine Meets Rhythm</p>
   </header>
-
   <nav>
     <a href="#">Home</a>
-    <a href="#">Tastings</a>
-    <a href="#">Wednesday Wine Deck</a>
-    <a href="#">Festival Saturdays</a>
+    <a href="#">Wine Tastings</a>
+    <a href="#">Wednesday Deck</a>
+    <a href="#">Concerts</a>
     <a href="#">Our Story</a>
-    <a href="#">Directions</a>
+    <a href="#">Newsletter</a>
   </nav>
-
+  <div class="hero-video">
+    <iframe src="https://www.youtube.com/embed/9mZy-Z0n3lA" title="La Belle Amie Vineyard Video" allowfullscreen></iframe>
+  </div>
   <div class="content">
-    <h2>Upcoming Feature Event</h2>
-    <div class="event-highlight">
-      <h3>🎶 CCR Tribute - Saturday, March 29</h3>
-      <p>Experience the timeless hits of Creedence Clearwater Revival with Midnight Special live at La Belle Amie Vineyard. Enjoy wine, rhythm, and good vibes under the Carolina sun. Gates open at 10AM. Music 12PM – 4PM.</p>
-      <p>Delicious eats from Stu’z Q BBQ, TJ’s Chicago Hot Dogs & Miller’s Mongolian BBQ. Sip fine wines and let the good times roll.</p>
-    </div>
+    <h2>Upcoming Event: CCR Tribute</h2>
+    <p>Join us for a celebration of Creedence Clearwater Revival with Midnight Special on Saturday, March 29. Gates open at 10AM, music from 12–4PM.</p>
+    <p>Enjoy fine wines, BBQ, hot dogs, Mongolian grill, and a relaxed vineyard vibe with good friends and great music.</p>
+    <a href="#" class="button-link">Buy Tickets Now</a>
 
-    <h2>Tickets</h2>
-    <p><a href="#">🎟 Wine Wednesday with Larry Stevens – March 26</a></p>
-    <p><a href="#">🎟 Saturday 3/29 CCR Tribute</a></p>
-
-    <h2>Photo Gallery</h2>
+    <h2>Gallery</h2>
     <div class="gallery">
-      <img src="https://labelleamie.com/wp-content/uploads/2020/10/festival-grapevine.jpg" alt="Festival View">
-      <img src="https://labelleamie.com/wp-content/uploads/2020/10/5eebb2c79b8f9.image_.jpg" alt="Band Playing">
+      <img src="https://labelleamie.com/wp-content/uploads/2020/10/festival-grapevine.jpg" alt="Festival Grapevine">
       <img src="https://labelleamie.com/wp-content/uploads/2020/10/winetasting.jpg" alt="Wine Tasting">
+      <img src="https://labelleamie.com/wp-content/uploads/2020/10/5eebb2c79b8f9.image_.jpg" alt="Live Music">
     </div>
   </div>
-
   <footer>
     <p>La Belle Amie Vineyard · 1120 Saint Joseph Road · Little River, SC 29566</p>
-    <p>📞 843-399-9463 · 📧 Michele.LaBelleAmie@Yahoo.com</p>
-    <p>&copy; 2025 La Belle Amie Vineyard – Crafted with style by VectorQuantum</p>
+    <p>843-399-9463 · Michele.LaBelleAmie@Yahoo.com</p>
+    <p>&copy; 2025 La Belle Amie Vineyard – Refined by VectorQuantum</p>
   </footer>
 </body>
 </html>
