@@ -3,40 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Belle Amie Vineyard – Modern Revival V3</title>
+  <title>La Belle Amie Vineyard – Legacy Edition</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Raleway', sans-serif;
-      background-color: #f5f2eb;
-      color: #333;
+      background-color: #faf5e4; /* soft parchment-like base */
+      color: #3f2c20; /* vintage earthy brown */
     }
     header {
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      background-color: #4B306A;
-      color: white;
-      padding: 1rem 2rem;
-      position: relative;
-      z-index: 2;
+      background-color: #faf5e4;
+      padding: 1rem 0;
     }
     header img {
-      max-height: 60px;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      margin: 0;
-      font-size: 2rem;
+      max-width: 600px;
+      width: 100%;
+      height: auto;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #6A4B7A;
+      background-color: #9b814b; /* vintage grape-stem gold */
       padding: 0.75rem 1rem;
-      position: relative;
-      z-index: 2;
     }
     nav a {
       color: #fff;
@@ -67,19 +59,21 @@
       opacity: 0.8;
     }
     .video-overlay {
-      position: relative;
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 2;
       text-align: center;
-      padding: 4rem 1rem;
       color: white;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     }
     .video-overlay h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
     .video-overlay p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     .content {
       padding: 3rem 10%;
@@ -87,7 +81,7 @@
     .content h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
-      color: #4B306A;
+      color: #5a3e2b; /* accent brown tone from banner text */
     }
     .content p {
       font-size: 1.1rem;
@@ -96,7 +90,7 @@
     }
     .button-link {
       display: inline-block;
-      background-color: #4B306A;
+      background-color: #9b814b;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
@@ -105,7 +99,7 @@
       transition: background-color 0.3s ease;
     }
     .button-link:hover {
-      background-color: #6A4B7A;
+      background-color: #7c6635;
     }
     .gallery {
       display: flex;
@@ -120,7 +114,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     footer {
-      background-color: #4B306A;
+      background-color: #9b814b;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
@@ -129,8 +123,7 @@
 </head>
 <body>
   <header>
-    <img src="assets/grape.png" alt="La Belle Amie Logo">
-    <h1>La Belle Amie Vineyard</h1>
+    <img src="assets/2000_banner.jpg" alt="Vintage La Belle Amie Banner">
   </header>
   <nav>
     <a href="#">Home</a>
@@ -146,7 +139,7 @@
       Your browser does not support the video tag.
     </video>
     <div class="video-overlay">
-      <h2>Welcome to La Belle Amie Vineyard</h2>
+      <h2>Welcome to the Vineyard</h2>
       <p>Where music, wine, and sunshine flow together.</p>
     </div>
   </div>
